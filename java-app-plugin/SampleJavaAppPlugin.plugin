@@ -1,0 +1,29 @@
+[Config]
+Plugin = SampleJavaAppPlugin.jar
+AppPluginId = SampleJavaAppPlugin
+AppPluginDisplayName = Sample Java App Plugin
+AuthorName = Awasu
+AuthorEmailAddress = support@awasu.com
+PluginNotes = This sample demonstrates how to query a database and return rows as a feed.
+
+' ---------------------------------------------------------------------
+
+[PluginParameterDefinition-1]
+Name = DatabasePath
+Type = file
+DefaultFileExtn = .db
+FileFilters = SQLite databases|*.db
+' NOTE: Since plugins are run from the directory in which they reside, we can
+' specify the default location of the database relative to us i.e. the same directory.
+DefaultValue = demo.db
+Description = Location of the demo database.
+IsRequired = 1
+
+' - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+[ChannelParameterDefinition-1]
+Name = MaxRows
+Type = int
+DefaultValue = -1
+Description = Maximum number of rows to return from the database (-1 = unlimited).
+IsRequired = 1

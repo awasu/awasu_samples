@@ -1,0 +1,34 @@
+<!--
+This file is an example of a simple RSS feed. It only uses the most common tags,
+and will be sufficient for most purposes.
+-->
+
+<rss>
+
+<channel>
+
+<title>Channel Title</title>
+<link>https://test.com</link> <!-- The channel's home page goes here -->
+<description>Channel description</description>
+
+<item>
+    <title>Item Title 1</title>
+    <link>https://test.com/item1.html</link> <!-- A link for this item goes here -->
+    <description>Item Description 1</description>
+</item>
+
+<item>
+    <title>Item Title 2</title>
+    <link>https://test.com/item2.html</link> <!-- A link for this item goes here -->
+    <description>Item Description 2</description>
+</item>
+
+<item>
+    <title>Item Title 3</title>
+    <link>https://test.com/item3.html</link> <!-- A link for this item goes here -->
+    <description>Item Description 3</description>
+</item>
+
+</channel>
+
+</rss>

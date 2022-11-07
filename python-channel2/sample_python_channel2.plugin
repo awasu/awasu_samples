@@ -1,0 +1,20 @@
+[Config]
+AuthorName = Awasu
+AuthorEmailAddress = support@awasu.com
+PluginNotes = This sample channel plugin demonstrates how to define parameters that users can set for each individual channel.
+
+' --------------------------------------------------------------------
+
+[ChannelParameterDefinition-1]
+Name = HomeUrl
+Type = string
+DefaultValue = https://test.com
+Description = Our demo home URL.
+IsRequired = 1
+
+[ChannelParameterDefinition-2]
+Name = nItems
+Type = int
+DefaultValue = 5
+Description = The number of feed items to generate.
+IsRequired = 1

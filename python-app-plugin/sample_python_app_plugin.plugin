@@ -1,0 +1,38 @@
+[Config]
+Plugin = sample_python_app_plugin.py
+AppPluginId = SamplePythonAppPlugin
+AppPluginDisplayName = Sample Python App Plugin
+AuthorName = Awasu
+AuthorEmailAddress = support@awasu.com
+PluginNotes = This sample demonstrates how to write an application plugin using both global and per-channel plugin parameters.
+
+' ---------------------------------------------------------------------
+
+[PluginParameterDefinition-1]
+Name = DomainName
+Type = string
+DefaultValue = https://test.com
+Description = Domain name for generated URL's.
+IsRequired = 1
+
+' - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+[ChannelParameterDefinition-1]
+Name = nItems
+Type = int
+DefaultValue = 5
+Description = Number of items to generate.
+IsRequired = 1
+
+[ChannelParameterDefinition-2]
+Name = ItemTitleStem
+Type = string
+DefaultValue = Item Title
+Description = Stem to use for generated item titles.
+IsRequired = 1
+
+[ChannelParameterDefinition-3]
+Name = GenerateDescriptions
+Type = bool
+DefaultValue = 1
+Description = Flags if descriptions should be generated for feed items.
